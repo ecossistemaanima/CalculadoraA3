@@ -200,7 +200,7 @@ public class CalculadoraItems extends javax.swing.JFrame {
         String dificuldade = cbDificuldade.getSelectedItem().toString();
         int tipoItemNum = 0;
         int horas = 0;
-        int horasTotais = Integer.parseInt(txtHorasTotais.getText());
+        double horasTotais = Double.parseDouble(txtHorasTotais.getText());
 
         int dificuldadeNum = Integer.parseInt(dificuldade);
 

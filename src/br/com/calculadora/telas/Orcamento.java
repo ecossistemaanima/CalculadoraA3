@@ -198,6 +198,7 @@ public class Orcamento extends javax.swing.JFrame {
                 double valorTotal = (valorHora * horasTotais) * 1.3;
 
                 objorcamentodto.setValorTotal(valorTotal);
+                objorcamentodto.setTotalHoras(horasTotais);
 
                 OrcamentoDAO objorcamentodao = new OrcamentoDAO();
                 objorcamentodao.cadastrarOrcamento(objorcamentodto);

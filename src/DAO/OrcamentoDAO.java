@@ -19,7 +19,7 @@ public class OrcamentoDAO {
 
     public void cadastrarOrcamento(OrcamentoDTO objorcamentodto) throws ClassNotFoundException {
 
-        String sql = "insert into orcamento (orcamentos) values (?)";
+        String sql = "insert into orcamento (orcamentosTotal, totalHoras) values (?,?)";
 
         conn = new ConexaoDAO().conectaDB();
 
@@ -27,6 +27,7 @@ public class OrcamentoDAO {
             pstm = conn.prepareStatement(sql);
 
             pstm.setDouble(1, objorcamentodto.getValorTotal());
+            pstm.setDouble(2, objorcamentodto.getTotalHoras());
 
             pstm.execute();
             pstm.close();

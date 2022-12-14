@@ -10,8 +10,8 @@ package DTO;
  */
 public class OrcamentoDTO {
 
-    private double valorTotal, valorHora;
-    private int    totalHoras, id;
+    private double valorTotal, valorHora, totalHoras ;
+    private int    id;
 
     public double getValorTotal() {
         return valorTotal;
@@ -29,11 +29,11 @@ public class OrcamentoDTO {
         this.valorHora = valorHora;
     }
 
-    public int getTotalHoras() {
+    public double getTotalHoras() {
         return totalHoras;
     }
 
-    public void setTotalHoras(int totalHoras) {
+    public void setTotalHoras(double totalHoras) {
         this.totalHoras = totalHoras;
     }
 
